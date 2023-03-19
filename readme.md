@@ -7,11 +7,15 @@
 | local_keycloak | quay.io/keycloak/keycloak:18.0.2 | 8080:8080  | admin    | admin    |
 
 Users Microservice
-| HTTP Method | Endpoint | Functionality | Required Roles |
-| --- | --- | --- | --- |
-| GET | /users/all | Get all users | N/A |
-| GET | /users/id/{id} | Get user by ID | ROLE_admin |
-| POST | /users/save | Save or update user | N/A |
-| GET | /users/admin | Get all non-admin users from Keycloak | ROLE_admin |
+
+| HTTP Method | Endpoint | Role | Description |
+|-------------|----------|------|-------------|
+| GET         | /users/all | ROLE_admin | Get a list of all users |
+| GET         | /users/id/{id} | ROLE_admin | Get a user by ID |
+| POST        | /users/save | ROLE_admin | Create or update a user |
+| GET         | /users/admin | ROLE_admin | Get a list of all users with the role ROLE_admin in Keycloak |
+
+> Note: All endpoints can only be accessed through a gateway running on port 9090 and require a valid Keycloak access token with the corresponding roles.
+
 
 
