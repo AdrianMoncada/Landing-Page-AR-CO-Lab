@@ -7,11 +7,11 @@
 | local_keycloak | quay.io/keycloak/keycloak:18.0.2 | 8080:8080  | admin    | admin    |
 
 Users Microservice
-| Endpoint | Method | Description |
-| --- | --- | --- |
-| http://localhost:9090/api/users | GET | Retrieve all users (requires authentication) |
-| http://localhost:9090/api/users/{id} | GET | Retrieve user by id (requires authentication) |
-| http://localhost:9090/api/users | POST | Create new user (requires authentication) |
-| http://localhost:9090/api/users/{id} | PUT | Update user by id (requires authentication) |
-| http://localhost:9090/api/users/{id} | DELETE | Delete user by id (requires authentication) |
+| HTTP Method | Endpoint | Functionality | Required Roles |
+| --- | --- | --- | --- |
+| GET | /users/all | Get all users | N/A |
+| GET | /users/id/{id} | Get user by ID | ROLE_admin |
+| POST | /users/save | Save or update user | N/A |
+| GET | /users/admin | Get all non-admin users from Keycloak | ROLE_admin |
+
 
