@@ -18,6 +18,8 @@ Users Microservice
 > Note: All endpoints can only be accessed through a gateway running on port 9090 and require a valid Keycloak access token with the corresponding roles.
 
 
+Movies Microservice
+
 | HTTP Method | Endpoint                      | Role                                | Description                                                                                                                                                                      | Tested |
 |-------------|-------------------------------|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | GET         | /                             | ROLE_admin, ROLE_client             | Retrieves a list of all movies.                                                                                                                                                 | Yes    |
