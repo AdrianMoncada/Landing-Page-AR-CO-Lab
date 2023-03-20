@@ -21,19 +21,12 @@ Ejecutar el archivo docker-compose.yml con el comando:
 | local_keycloak | quay.io/keycloak/keycloak:18.0.2 | 8080:8080  | admin    | admin    |
 
 
-Loguearse en la consola de administración de Keycloak. Crear el reino ***My-Realm*** importando
-las configuraciones con el archivo **My-Realm-realm.json**.
-
-Keycloak se levantará en el puerto 8080:
-
-[http://localhost:8080](http://localhost:8080)
-
 Ingresar al panel de administración con las credenciales establecidas en el archivo docker-compose:
 
 • username: admin
 • password: admin
 
-Una vez autenticado, crear un nuevo reino importando el archivo My-Realm-realm.json que se encuentra en la misma carpeta que el archivo “docker-compose”. Seguir estos pasos:
+Una vez autenticado, crear un nuevo reino importando el archivo My-Realm-realm.json que se encuentra en la "keycloak config"
 
 1. Hacer click en "Add realm"
 2. Hacer click en "import" e importar el archivo "My-Realm-realm.json"
@@ -45,7 +38,6 @@ Para el correcto funcionamiento, se deberá crear tres usuarios con username y p
 
 Luego, a cada uno de estos usuarios se les deberá asignar un grupo. El usuario admin se debe asignar al grupo admin, el usuario client se debe asignar al grupo client y el usuario provider se debe asignar al grupo provider.
 
-Una vez creados los usuarios, se puede proceder a levantar los microservicios.
 
 Crear 3 usuarios (admin,client,provider) con los datos que figuran más adelante en este documento. Agregar cada uno a su grupo (admin, client, provider respectivamente).
 
@@ -54,6 +46,8 @@ Crear 3 usuarios (admin,client,provider) con los datos que figuran más adelante
 |client|client|client|
 |admin|admin|admin|
 |provider|provider|provider|
+
+Una vez creados los usuarios, se puede proceder a levantar los microservicios.
 
 Ejemplo: usuario admin
 
