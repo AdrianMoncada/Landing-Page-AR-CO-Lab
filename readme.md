@@ -12,13 +12,13 @@ Ejecutar el archivo docker-compose.yml con el comando:
 
     docker-compose up
 
-| Container Name | Image Used                      | Port       | Username | Password | Testeado |
-| -------------- | ------------------------------ | ---------- | -------- | -------- | ----------|
-| postgres       | postgres:latest                | 5439:5439  | postgres | 1234     | NO        |
-| mongomoviescontenedor | mongo                   | 27018:27017 | usrmongo | pwdmongo | NO       |
-| mongobillscontenedor | mongo                   | 27019:27017 | usrmongo | pwdmongo | NO        |
-| mongousercontenedor  | mongo                   | 27020:27017 | usrmongo | pwdmongo |  NO       |
-| local_keycloak | quay.io/keycloak/keycloak:18.0.2 | 8080:8080  | admin    | admin    | NO      |
+| Container Name | Image Used                      | Port       | Username | Password |
+| -------------- | ------------------------------ | ---------- | -------- | -------- | 
+| postgres       | postgres:latest                | 5439:5439  | postgres | 1234     | 
+| mongomoviescontenedor | mongo                   | 27018:27017 | usrmongo | pwdmongo | 
+| mongobillscontenedor | mongo                   | 27019:27017 | usrmongo | pwdmongo |
+| mongousercontenedor  | mongo                   | 27020:27017 | usrmongo | pwdmongo | 
+| local_keycloak | quay.io/keycloak/keycloak:18.0.2 | 8080:8080  | admin    | admin    |
 
 
 Ingresar al panel de administración con las credenciales establecidas en el archivo docker-compose:
