@@ -4,7 +4,7 @@
 | mongomoviescontenedor | mongo                   | 27018:27017 | usrmongo | pwdmongo |
 | mongobillscontenedor | mongo                   | 27019:27017 | usrmongo | pwdmongo |
 | mongousercontenedor  | mongo                   | 27020:27017 | usrmongo | pwdmongo |
-| local_keycloak | quay.io/keycloak/keycloak:18.0.2 | 8080:8080  | admin    | admin    |
+| local_keycloak | quay.io/keycloak/keycloak:18.0.2 | 8082:8080  | admin    | admin    |
 
 Users Microservice
 
