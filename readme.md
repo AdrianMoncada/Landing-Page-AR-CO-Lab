@@ -6,7 +6,7 @@
 
 <img src="./img/diagrama.png" alt="700" width="700"/>
 
-### Breve descripción del proyecto
+### Aplicación basada en tres microservicios desarrollados en Java utilizando Spring Boot. Los microservicios están diseñados para manejar facturas, usuarios y películas. Además, la aplicación implementa Keycloak, un sistema de gestión de identidad y acceso, y Eureka Server, un servidor de registro y descubrimiento de servicios. También se ha implementado un gateway para redirigir las solicitudes que llegan de los microservicios de películas y usuarios.
 
 Ejecutar el archivo docker-compose.yml con el comando:
 
