@@ -94,7 +94,7 @@ Microservicio de usuarios (users-service)
 |-------------|----------|------|-------------|---------|
 | GET         | /users/all | ROLE_admin | Obtiene un listado de todos los usuarios |Sí|
 | GET         | /users/id/{id} | ROLE_admin | Obtiene un usuario por ID |Sí|
-| POST        | /users/save | ROLE_admin | Crea o actualiza un usuario |NO|
+| POST        | /users/save | ROLE_admin | Crea o actualiza un usuario |No|
 | GET         | /users/admin | ROLE_admin | Obtiene una lista de todos los usuarios excepto los que tienen ROLE_admin en Keycloak |Sí|
 
 
@@ -103,9 +103,9 @@ Microservicio de usuarios (users-service)
 
 Microservicio de peliculas (movies-api)
 
-| HTTP Method | Endpoint                      | Rol                                | Descripción                                                                                                                                                                      |
-|-------------|-------------------------------|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| GET         | /movies                             | ROLE_admin, ROLE_client             | Devuelve una lista de todas las peliculas movies.                                                                                                                                                 |
+| HTTP Method | Endpoint                      | Rol                                | Descripción | TESTEADO                                                                                                                                                                      |
+|-------------|-------------------------------|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
+| GET         | /movies                             | ROLE_admin, ROLE_client             | Devuelve una lista de todas las peliculas movies. | Sí |                                                                                                                                                |
 | GET         | /movies/{imdbId}                     | ROLE_admin, ROLE_client             | Devuelve una pelicula por respectivo 'imbdId'                                                                                                                                        |
 | POST        | /movies                             | ROLE_admin                          | Crea una nueva pelicula de acuerdo al Body solicitado.                                                                                                                                   |
 | PUT         | /movies/{imdbId}                     | ROLE_admin                          | Actualiza una pelicula existente con los detallen provistos.                                                                                                                            |
