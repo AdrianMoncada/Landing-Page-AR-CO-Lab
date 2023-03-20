@@ -90,12 +90,12 @@ A continuación, se presentan 2 tablas con todos los endpoints disponibles en lo
 
 Microservicio de usuarios (users-service)
 
-| HTTP Method | Endpoint | Rol | Descripción |
-|-------------|----------|------|-------------|
-| GET         | /users/all | ROLE_admin | Obtiene un listado de todos los usuarios |
-| GET         | /users/id/{id} | ROLE_admin | Obtiene un usuario por ID |
-| POST        | /users/save | ROLE_admin | Crea o actualiza un usuario |
-| GET         | /users/admin | ROLE_admin | Obtiene una lista de todos los usuarios excepto los que tienen ROLE_admin en Keycloak |
+| HTTP Method | Endpoint | Rol | Descripción | TESTEADO |
+|-------------|----------|------|-------------|---------|
+| GET         | /users/all | ROLE_admin | Obtiene un listado de todos los usuarios |Sí|
+| GET         | /users/id/{id} | ROLE_admin | Obtiene un usuario por ID |Sí|
+| POST        | /users/save | ROLE_admin | Crea o actualiza un usuario |NO|
+| GET         | /users/admin | ROLE_admin | Obtiene una lista de todos los usuarios excepto los que tienen ROLE_admin en Keycloak |Sí|
 
 
 > Nota: Todos los endpoints pueden ser accedidos únicamente a traves del Gateway corriendo en el puerto 9090 y requieren un Access Token válido de Keycloak con los roles correspondientes.
